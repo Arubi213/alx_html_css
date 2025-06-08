@@ -32,3 +32,47 @@ header, footer {
   padding: 10px;
   background-color: #eee; /* For visual distinction */
 }
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #444;
+  color: white;
+  padding: 1em;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+article {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+aside {
+  background-color: #f8f8f8;
+  border-left: 2px solid #ccc;
+  padding: 1em;
+}
+
+.logo {
+  font-size: 2em;   /* Make it bigger */
+  margin-right: 1em;
+  color: #ff6600;
+}
+article h2 {
+  font-size: 1.5em;
+  color: #0066cc;
+}
+
+article p {
+  line-height: 1.6;
+}
