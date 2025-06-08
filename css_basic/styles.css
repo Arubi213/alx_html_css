@@ -1,0 +1,34 @@
+/* Make body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height to allow scrolling inside children */
+  margin: 0; /* Remove default margin */
+}
+
+/* Make main a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Let main take automatic height and width */
+  flex-grow: 1; /* Make main expand to fill available space */
+}
+
+/* article takes 2 parts of the flex space */
+article {
+  flex: 2;
+  overflow-y: auto; /* Scroll vertically if content overflows */
+}
+
+/* aside takes 1 part of the flex space */
+aside {
+  flex: 1;
+  overflow-y: auto; /* Scroll vertically if content overflows */
+}
+
+/* Optional: Make header and footer take only needed space */
+header, footer {
+  flex-shrink: 0; /* Prevent them from shrinking */
+  padding: 10px;
+  background-color: #eee; /* For visual distinction */
+}
