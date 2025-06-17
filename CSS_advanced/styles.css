@@ -1,0 +1,430 @@
+/* General Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: #071629;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background: transparent;
+    padding: 20px 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+#home {
+    background: url('img/Object.png') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    position: relative;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent, #071629);
+}
+
+#get h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#get span {
+    margin: 0 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#get button {
+    margin-top: 40px;
+    padding: 12px 24px;
+    background: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 42px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#get button:hover {
+    background: #9a4dcc;
+}
+
+/* Learn from Pros Section */
+#learn {
+    background: linear-gradient(to bottom, transparent, #071629);
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+#learn h2 {
+  color: #f7f6f8; /* This will be the color for the rest of the heading */
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+#learn h2 span {
+  color: #C271FF; /* Choose your desired color for the first word */
+}
+
+
+#pros {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+#pros > div {
+    text-align: center;
+    width: 150px;
+}
+
+#pros img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#pros h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#pros p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Testimonial Section */
+#home + section {
+    background: #C271FF;
+    color: white;
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#home + section img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#home + section blockquote {
+    font-size: 22px;
+    font-style: italic;
+    max-width: 700px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#home + section h3 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#home + section p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Tutorials Section */
+#home + section + section {
+    background: white;
+    padding: 100px 5%;
+    text-align: center;
+}
+
+#home + section + section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+#home + section + section > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+#home + section + section > div > div {
+    text-align: left;
+}
+
+#home + section + section img:first-child {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+#home + section + section img:first-child:hover {
+    transform: scale(1.03);
+}
+
+#home + section + section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#home + section + section > div > div > p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#home + section + section > div > div > div:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#home + section + section > div > div > div:first-of-type img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#home + section + section > div > div > div:first-of-type h4 {
+    font-size: 14px;
+    color: #C271FF;
+    font-weight: bold;
+}
+
+#home + section + section > div > div > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home + section + section > div > div > div:last-of-type > div {
+    display: flex;
+    gap: 5px;
+    color: #C271FF;
+}
+
+#home + section + section > div > div > div:last-of-type p {
+    font-size: 12px;
+    color: #C271FF;
+    font-weight: bold;
+}
+
+/* Membership Section */
+#home + section + section + section {
+    background: #071629;
+    color: white;
+    padding: 100px;
+    display: flex;
+    text-align: center;
+}
+
+#home + section + section + section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+#home + section + section + section > div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+#home + section + section + section img {
+    height: 50px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+}
+
+#home + section + section + section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home + section + section + section p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#home + section + section + section button {
+    padding: 12px 24px;
+    background: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#home + section + section + section button:hover {
+    background: #9a4dcc;
+}
+
+/* FAQ Section */
+#home + section + section + section + section {
+    background: white;
+    padding: 100px ;
+    text-align: center;
+}
+
+#home + section + section + section + section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+#home + section + section + section + section > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home + section + section + section + section > div > div {
+    flex: 1;
+    text-align: left;
+}
+
+#home + section + section + section + section h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #071629;
+}
+
+#home + section + section + section + section > div > div > div > div:nth-child(even) {
+    font-size: 14px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    color: #071629;
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background: #071629;
+    color: white;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+footer section > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: #C271FF;
+}
+
+footer p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #get h1 {
+        font-size: 36px;
+    }
+
+    #get span {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #pros {
+        gap: 40px;
+    }
+
+    #home + section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    #home + section + section + section + section > div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer section > div:first-child {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
